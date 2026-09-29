@@ -30,13 +30,10 @@ to perform:
 ------------------------------------------------------------------------
 
 # Features
-
-  Module     Function
-  ---------- -----------------------------------------------------
-  Module 1   Depth-based haplotype fusion detection
-  Module 2   HiFi-assisted local haplotype recovery
-  Module 3   Hi-C assisted haplotype validation
-  Module 4   Polyploid haplotype-aware chromosome reconstruction
+Module 1   Depth-based haplotype fusion detection
+Module 2   HiFi-assisted local haplotype recovery
+Module 3   Hi-C assisted haplotype validation
+Module 4   Polyploid haplotype-aware chromosome reconstruction
 
 # Installation
 
@@ -51,16 +48,12 @@ pip install numpy pandas scipy scikit-learn pysam networkx
 ```
 
 ## External software
-
-  Software       Purpose
-  -------------- ----------------------------
-  bwa-mem2       Illumina/Hi-C read mapping
-  samtools       BAM processing
-  minimap2       HiFi read alignment
-  hifiasm        Local haplotype assembly
-  RepeatMasker   Repeat filtering
-  HapHiC         Chromosome scaffolding
-
+bwa-mem2
+samtools
+minimap2
+hifiasm
+RepeatMasker
+HapHiC
 # Installation
 
 ``` bash
@@ -129,22 +122,6 @@ hic_R2.fastq.gz
 
 This module identifies potential haplotype-fused regions using Illumina
 sequencing depth.
-
-Workflow:
-
-``` text
-Assembly
- |
-Illumina read mapping
- |
-Window-based depth calculation
- |
-Haplotype depth estimation
- |
-Depth normalization
- |
-Haplotype classification
-```
 
 Normalized depth:
 
