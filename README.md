@@ -29,14 +29,16 @@ to perform:
 
 ------------------------------------------------------------------------
 
-# Features
+## Features
 Module 1   Depth-based haplotype fusion detection
+
 Module 2   HiFi-assisted local haplotype recovery
+
 Module 3   Hi-C assisted haplotype validation
+
 Module 4   Polyploid haplotype-aware chromosome reconstruction
 
-# Installation
-
+## Installation
 ## Requirements
 
 Python \>= 3.8
@@ -54,7 +56,7 @@ minimap2
 hifiasm
 RepeatMasker
 HapHiC
-# Installation
+## Installation
 
 ``` bash
 git clone https://github.com/yourname/PolyHIC.git
@@ -74,7 +76,7 @@ PolyHIC/
 └── README.md
 ```
 
-# Input Data
+## Input Data
 
 ## 1. Initial contig assembly
 
@@ -112,9 +114,9 @@ hic_R1.fastq.gz
 hic_R2.fastq.gz
 ```
 
-# Modules
+## Modules
 
-# Module 1
+## Module 1
 
 ## polyhic_depth.py
 
@@ -150,7 +152,7 @@ python polyhic_depth.py \
 -o sample01
 ```
 
-# Module 2
+## Module 2
 
 ## polyhic_reassembly.py
 
@@ -168,7 +170,7 @@ python polyhic_reassembly.py \
 -o local_reassembly
 ```
 
-# Module 3
+## Module 3
 
 ## polyhic_hic.py
 
@@ -194,7 +196,7 @@ python polyhic_hic.py \
 -o validation
 ```
 
-# Module 4
+## Module 4
 
 ## polyhic_phcr.py
 
@@ -212,7 +214,7 @@ python polyhic_phcr.py \
 -o chromosome_assignment.tsv
 ```
 
-# Complete Pipeline Example
+## Complete Pipeline Example
 
 ## Step 1: Fusion detection
 
@@ -250,7 +252,7 @@ python polyhic_phcr.py \
 --chromosome-number 21
 ```
 
-# Output
+## Output
 
 ``` text
 PolyHIC_result/
@@ -264,7 +266,7 @@ PolyHIC_result/
 └── QC_report/
 ```
 
-# Applications
+## Applications
 
 PolyHIC is designed for:
 
